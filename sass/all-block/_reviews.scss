@@ -1,0 +1,125 @@
+.reviews-color {
+    background: $main-bg;
+    padding: 80px 0 105px 0;
+}
+
+.reviews__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 150%;
+    color: $color-text;
+    @include for-ipad-mini1-only {
+        font-size: 24px;
+    }
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+    position: relative;
+}
+
+.reviews__card {
+    max-width: 800px;
+    min-height: 489px;
+    background: $card-color;
+    position: relative;
+    padding: 48px 24px 0 40px;
+}
+
+.reviews__card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 4px solid $color-line;
+}
+
+.reviews__card__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: $color-text;
+    margin-left: 160px;
+    @include for-ipad-mini1-only {
+        font-size: 18px;
+    }
+    @include for-mobile-only {
+        font-size: 14px;
+    }
+}
+
+.reviews__card__maintext {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-text;
+    margin-left: 160px;
+    @include for-mobile-only {
+        font-size: 12px;
+    }
+}
+
+.reviews__card__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: $color-text;
+    margin-top: 73px;
+    @include for-ipad-mini2-only {
+        font-size: 18px;
+    }
+    @include for-ipad-mini1-only {
+        font-size: 14px;
+    }
+}
+
+.reviews__card__box {
+    width: 360px;
+    border-bottom: 8px solid $color-line;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 8px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.reviews__card__logo {
+    margin-right: 16px;
+}
+
+.pagination {
+    position: absolute;
+    bottom: -50px;
+    left: 10%;
+}
+
+.reviews__img {
+    @include for-mobile-only {
+        display: none;
+    }
+}
+
+.acrdion__btn {
+    display: none;
+    @include for-mobile-only {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-top: 20px;
+    }
+}
+
+.arrow__back__img,
+.arrow__forward__img {
+    width: 12px;
+    height: 24px;
+}
+
+.arrow__back,
+.arrow__forward {
+    padding: 8px 22px;
+    background-color: $card-color;
+}

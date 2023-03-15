@@ -1,0 +1,67 @@
+.icon__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    @include for-ipad-mini1-only {
+        font-size: 24px;
+    }
+    @include for-mobile-only {
+        font-size: 18px;
+    }
+}
+
+.icon__card__img1 {
+    @include for-ipad-mini2-only {
+        display: none;
+    }
+}
+
+.icon__card__img2 {
+    display: none;
+    @include for-ipad-mini2-only {
+        display: block;
+    }
+}
+
+.img3 {
+    display: none;
+}
+
+.icon__card:nth-child(6) {
+    @include for-ipad-mini1-only {
+        display: none;
+    }
+}
+
+.icon__card:nth-child(7) {
+    @include for-ipad-mini1-only {
+        display: none;
+    }
+}
+
+.icon__card:nth-child(8) {
+    @include for-ipad-mini1-only {
+        display: none;
+    }
+}
+
+.icon__card:nth-child(9) {
+    @include for-ipad-mini1-only {
+        display: none;
+    }
+}
+
+.icon__card:nth-child(10) {
+    @include for-ipad-mini1-only {
+        display: none;
+    }
+}
+
+.icon__card:nth-child(11) {
+    @include for-ipad-mini1-only {
+        display: none;
+    }
+}

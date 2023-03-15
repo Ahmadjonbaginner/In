@@ -1,0 +1,200 @@
+.registers__img {
+    background-image: url('../images/Background__image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0 151px 0;
+    @include for-ipad-mini1-only {
+        padding: 56px 0 76px 0;
+        background-position: 0 0;
+    }
+}
+
+.registers {
+    &__responsive {
+        display: none;
+        @include for-ipad-mini1-only {
+            display: block;
+            background-color: $card-bg;
+        }
+        @include for-mobile-only {
+            display: none;
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 150%;
+        color: $card-color;
+        @include for-ipad-mini1-only {
+            font-size: 24px;
+        }
+        @include for-mobile-only {
+            font-size: 18px;
+        }
+    }
+}
+
+.regster {
+    display: flex;
+    @include for-ipad-mini1-only {
+        padding-top: 32px;
+    }
+    @include for-mobile-only {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    &__left {
+        max-width: 600px;
+        max-height: 658px;
+        background-color: $main-bg;
+        overflow: scroll;
+        @include for-ipad-mini1-only {
+            margin: 0 auto;
+        }
+        &__box {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 30px 10px 40px;
+            background-color: $card-color;
+        }
+        &__box div {
+            display: flex;
+            column-gap: 10px;
+        }
+        &__box span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: $color-text;
+        }
+        &__menu {
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 32px;
+            padding: 24px 16px 31px 40px;
+            &__item {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                color: $color-text;
+                @include for-mobile-only {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &__left::-webkit-scrollbar {
+        width: 4px;
+    }
+    &__left::-webkit-scrollbar-track {
+        background-color: $main-bg;
+    }
+    &__left::-webkit-scrollbar-track {
+        background: $color-line;
+    }
+    &__right {
+        max-width: 600px;
+        padding: 92px 68px;
+        display: flex;
+        flex-direction: column;
+        background-color: $card-bg;
+        @include for-ipad-mini2-only {
+            padding: 107px 45px 75px 20px;
+        }
+        @include for-ipad-mini1-only {
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 130%;
+            color: $card-color;
+            @include for-ipad-mini1-only {
+                font-size: 18px;
+            }
+            @include for-mobile-only {
+                font-size: 14px;
+            }
+        }
+        &__name input,
+        &__email input {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            color: rgba(255, 255, 255, 0.5);
+            border: none;
+            background: none;
+            outline: none;
+            padding: 5px;
+            @include for-mobile-only {
+                font-size: 14px;
+            }
+        }
+        &__name,
+        &__email {
+            margin-top: 64px;
+            display: block;
+            border-bottom: 1px solid #FFFFFF;
+        }
+        &__check {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            color: $card-color;
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+            padding-top: 64px;
+        }
+        &__btn {
+            width: 336px;
+            height: 56px;
+            border: 2px solid $color-line;
+            background: none;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 130%;
+            color: #FFFFFF;
+            margin: 0 auto;
+            margin-top: 72px;
+            @include for-ipad-mini1-only {
+                width: 256px;
+                height: 48px;
+                font-size: 14px;
+            }
+            @include for-mobile-only {
+                max-width: 248px;
+            }
+        }
+        &__btn:hover {
+            background-color: $color-line;
+            border: 2px solid $card-color;
+            color: $card-bg;
+        }
+    }
+}
+
+.regster .block {
+    @include for-ipad-mini1-only {
+        display: none;
+    }
+    @include for-mobile-only {
+        display: block;
+    }
+}
+
+.rester__left__box__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    color: $color-text;
+}
+
+.name-span,
+.email-span {
+    color: $card-color;
+}

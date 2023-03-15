@@ -1,0 +1,57 @@
+footer {
+    background-color: $card-bg;
+    padding: 40px 0;
+}
+
+.footer__img {
+    @include for-ipad-mini2-only {
+        width: 146px;
+        height: 40px;
+    }
+    @include for-mobile-only {
+        width: 56px;
+        height: 15px;
+    }
+}
+
+.footer__box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    @include for-ipad-mini2-only {
+        flex-direction: column;
+        row-gap: 22px;
+    }
+    @include for-mobile-only {
+        flex-direction: column;
+    }
+}
+
+.footer__block {
+    display: flex;
+    column-gap: 16px;
+    @include for-mobile-only {
+        justify-content: space-between;
+    }
+}
+
+.footer__block span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+    color: #FFFFFF;
+    @include for-mobile-only {
+        font-size: 12px;
+    }
+}
+
+.footer__block a {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    @include for-mobile-only {
+        font-size: 12px;
+    }
+}
